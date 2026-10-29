@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <title>Welcome | Woodpecker's Nest — Homestay near Kasardevi, Almora</title>
+    <meta
+      name="description"
+      content="Welcome to Woodpecker's Nest! Find your WiFi details, follow us on Instagram, and browse our menu."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <style>
+      *,
+      :before,
+      :after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      :root {
+        --green: #4a7c59;
+        --green-light: #7baf8a;
+        --green-pale: #eaf3ec;
+        --green-mid: #c8dfce;
+        --warm-white: #fbf8f3;
+        --warm-off: #f4efe6;
+        --brown: #7c4e32;
+        --brown-dark: #4a2e1a;
+        --brown-light: #b8845a;
+        --text: #2e2118;
+        --muted: #6b5a4e;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background: var(--warm-white);
+        color: var(--text);
+        -webkit-font-smoothing: antialiased;
+        min-height: 100vh;
+        font-family:
+          Georgia,
+          Times New Roman,
+          serif;
+        line-height: 1.75;
+      }
+      .hero {
+        text-align: center;
+        background: linear-gradient(
+          155deg,
+          #2c5040 0%,
+          #3d6b52 50%,
+          #5c3d22 100%
+        );
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 52vh;
+        padding: 3.5rem 1.5rem 6rem;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero-mountains {
+        pointer-events: none;
+        height: 45%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      .stars {
+        pointer-events: none;
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+      }
+      .star {
+        background: #fff;
+        border-radius: 50%;
+        animation: 4s ease-in-out infinite twinkle;
+        position: absolute;
+      }
+      @keyframes twinkle {
+        0%,
+        to {
+          opacity: 0.12;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.65;
+          transform: scale(1.4);
+        }
+      }
+      .birds {
+        pointer-events: none;
+        width: 100%;
+        position: absolute;
+        top: 14%;
+        left: 0;
+      }
+      .bird {
+        opacity: 0;
+        animation: linear infinite fly;
+        position: absolute;
+      }
+      .bird svg {
+        fill: none;
+        stroke: #fff6;
+        stroke-width: 1.8px;
+      }
+      .bird:first-child {
+        width: 28px;
+        animation-duration: 26s;
+        animation-delay: 0s;
+        top: 4px;
+      }
+      .bird:nth-child(2) {
+        width: 22px;
+        animation-duration: 22s;
+        animation-delay: 4s;
+        top: 19px;
+      }
+      .bird:nth-child(3) {
+        width: 24px;
+        animation-duration: 30s;
+        animation-delay: 9s;
+        top: 0;
+      }
+      .bird:nth-child(4) {
+        width: 18px;
+        animation-duration: 20s;
+        animation-delay: 13s;
+        top: 30px;
+      }
+      @keyframes fly {
+        0% {
+          opacity: 0;
+          left: -6%;
+        }
+        4% {
+          opacity: 1;
+        }
+        96% {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+          left: 106%;
+        }
+      }
+      .hero-badge {
+        color: #ffffffd9;
+        letter-spacing: 3.5px;
+        text-transform: uppercase;
+        background: #ffffff1a;
+        border: 1px solid #ffffff47;
+        border-radius: 50px;
+        margin-bottom: 1.4rem;
+        padding: 0.42rem 1.3rem;
+        font-family: sans-serif;
+        font-size: 0.7rem;
+        animation: 0.9s both fadeUp;
+        display: inline-block;
+      }
+      .hero h1 {
+        color: #fff;
+        letter-spacing: -1.5px;
+        margin-bottom: 0.5rem;
+        font-size: clamp(2.2rem, 7vw, 4rem);
+        font-weight: 400;
+        line-height: 1.1;
+        animation: 0.9s 0.12s both fadeUp;
+      }
+      .hero h1 em {
+        color: #c8e6ba;
+        font-style: normal;
+      }
+      .hero-sub {
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #ffffff80;
+        margin-bottom: 1rem;
+        font-family: sans-serif;
+        font-size: 0.78rem;
+        animation: 0.9s 0.25s both fadeUp;
+      }
+      .hero-tagline {
+        color: #ffffffbf;
+        max-width: 480px;
+        font-size: clamp(0.95rem, 2.4vw, 1.1rem);
+        line-height: 1.9;
+        animation: 0.9s 0.38s both fadeUp;
+      }
+      .cards-sec {
+        z-index: 10;
+        max-width: 680px;
+        margin: -3.5rem auto 0;
+        padding: 0 1.5rem 5rem;
+        position: relative;
+      }
+      .welcome-msg {
+        background: var(--brown-dark);
+        color: #ffffffd1;
+        text-align: center;
+        letter-spacing: 0.2px;
+        border-radius: 50px;
+        margin-bottom: 2rem;
+        padding: 0.9rem 1.8rem;
+        font-family: sans-serif;
+        font-size: 0.86rem;
+        animation: 0.8s 0.5s both fadeUp;
+        box-shadow: 0 4px 18px #4a2e1a33;
+      }
+      .welcome-msg strong {
+        color: #e8b86d;
+      }
+      .link-cards {
+        flex-direction: column;
+        gap: 1.1rem;
+        display: flex;
+      }
+      .link-card {
+        color: var(--text);
+        border: 1px solid var(--green-mid);
+        cursor: pointer;
+        background: #fff;
+        border-radius: 18px;
+        align-items: center;
+        gap: 1.4rem;
+        padding: 1.5rem 1.8rem;
+        text-decoration: none;
+        transition:
+          transform 0.22s,
+          box-shadow 0.22s,
+          border-color 0.22s;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 22px #4a7c5917;
+      }
+      .link-card:before {
+        content: "";
+        background: var(--green-pale);
+        opacity: 0;
+        border-radius: inherit;
+        transition: opacity 0.2s;
+        position: absolute;
+        inset: 0;
+      }
+      .link-card:hover {
+        border-color: var(--green-light);
+        transform: translateY(-4px);
+        box-shadow: 0 10px 32px #4a7c5929;
+      }
+      .link-card:hover:before {
+        opacity: 1;
+      }
+      .link-card > * {
+        z-index: 1;
+        position: relative;
+      }
+      .card-icon {
+        border-radius: 14px;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        width: 52px;
+        height: 52px;
+        display: flex;
+      }
+      .card-icon svg {
+        width: 24px;
+        height: 24px;
+      }
+      .card-icon-wifi {
+        background: linear-gradient(135deg, #2c5040, #4a7c59);
+      }
+      .card-icon-wifi svg {
+        color: #c8e6ba;
+      }
+      .card-icon-insta {
+        background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+      }
+      .card-icon-insta svg {
+        color: #fff;
+      }
+      .card-icon-menu {
+        background: linear-gradient(135deg, #7c4e32, #b8845a);
+      }
+      .card-icon-menu svg {
+        color: #fff;
+      }
+      .card-body {
+        flex: 1;
+        min-width: 0;
+      }
+      .card-label {
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: var(--green);
+        margin-bottom: 0.18rem;
+        font-family: sans-serif;
+        font-size: 0.62rem;
+        display: block;
+      }
+      .card-title {
+        color: var(--brown-dark);
+        margin-bottom: 0.22rem;
+        font-size: 1.12rem;
+        font-weight: 400;
+        line-height: 1.2;
+      }
+      .card-desc {
+        color: var(--muted);
+        font-family: sans-serif;
+        font-size: 0.78rem;
+        line-height: 1.5;
+      }
+      .card-arrow {
+        background: var(--green-pale);
+        border-radius: 50%;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        width: 28px;
+        height: 28px;
+        transition:
+          background 0.2s,
+          transform 0.2s;
+        display: flex;
+      }
+      .card-arrow svg {
+        width: 14px;
+        height: 14px;
+        color: var(--green);
+      }
+      .link-card:hover .card-arrow {
+        background: var(--green);
+        transform: translate(3px);
+      }
+      .link-card:hover .card-arrow svg {
+        color: #fff;
+      }
+      .wifi-detail {
+        background: var(--green-pale);
+        border: 1px solid var(--green-mid);
+        border-radius: 14px;
+        margin-top: 0.85rem;
+        padding: 1.3rem 1.8rem;
+        display: none;
+      }
+      .wifi-detail.open {
+        display: block;
+      }
+      .wifi-row {
+        border-bottom: 1px solid #4a7c591f;
+        align-items: center;
+        gap: 0.9rem;
+        padding: 0.55rem 0;
+        display: flex;
+      }
+      .wifi-row:last-child {
+        border-bottom: none;
+      }
+      .wifi-key {
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        color: var(--green);
+        flex-shrink: 0;
+        width: 72px;
+        font-family: sans-serif;
+        font-size: 0.66rem;
+      }
+      .wifi-val {
+        color: var(--brown-dark);
+        letter-spacing: 0.5px;
+        flex: 1;
+        font-family:
+          Courier New,
+          monospace;
+        font-size: 0.93rem;
+        font-weight: 700;
+      }
+      .copy-btn {
+        border: 1px solid var(--green-light);
+        color: var(--green);
+        cursor: pointer;
+        white-space: nowrap;
+        background: 0 0;
+        border-radius: 50px;
+        padding: 0.25rem 0.75rem;
+        font-family: sans-serif;
+        font-size: 0.66rem;
+        transition:
+          background 0.15s,
+          color 0.15s;
+      }
+      .copy-btn:hover,
+      .copy-btn.copied {
+        background: var(--green);
+        color: #fff;
+      }
+      .wifi-note {
+        color: var(--muted);
+        margin-top: 0.9rem;
+        font-family: sans-serif;
+        font-size: 0.75rem;
+        line-height: 1.55;
+      }
+      .card-expand-hint {
+        color: var(--green);
+        white-space: nowrap;
+        margin-left: auto;
+        padding-right: 0.3rem;
+        font-family: sans-serif;
+        font-size: 0.72rem;
+        font-weight: 600;
+      }
+      .ornament {
+        text-align: center;
+        color: var(--muted);
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        opacity: 0.45;
+        margin: 2.8rem 0 1rem;
+        font-family: sans-serif;
+        font-size: 0.7rem;
+      }
+      footer {
+        text-align: center;
+        color: #ffffff40;
+        background: #2c1a0e;
+        padding: 1.8rem 1.5rem;
+        font-family: sans-serif;
+        font-size: 0.75rem;
+      }
+      footer a {
+        color: #fff6;
+        text-decoration: none;
+      }
+      footer a:hover {
+        color: #ffffffb3;
+      }
+      @keyframes fadeUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+      .link-card:first-child {
+        animation: 0.7s 0.55s both fadeUp;
+      }
+      .link-card:nth-child(2) {
+        animation: 0.7s 0.7s both fadeUp;
+      }
+      .link-card:nth-child(3) {
+        animation: 0.7s 0.85s both fadeUp;
+      }
+      @media (width<=500px) {
+        .link-card {
+          gap: 1rem;
+          padding: 1.2rem 1.3rem;
+        }
+        .card-icon {
+          border-radius: 12px;
+          width: 46px;
+          height: 46px;
+        }
+        .card-icon svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="stars" id="stars"></div>
+      <div class="birds">
+        <div class="bird">
+          <svg viewBox="0 0 40 20" width="100%">
+            <path d="M2,10 Q10,2 20,10 Q30,2 38,10" />
+          </svg>
+        </div>
+        <div class="bird">
+          <svg viewBox="0 0 40 20" width="100%">
+            <path d="M2,10 Q10,2 20,10 Q30,2 38,10" />
+          </svg>
+        </div>
+        <div class="bird">
+          <svg viewBox="0 0 40 20" width="100%">
+            <path d="M2,10 Q10,2 20,10 Q30,2 38,10" />
+          </svg>
+        </div>
+        <div class="bird">
+          <svg viewBox="0 0 40 20" width="100%">
+            <path d="M2,10 Q10,2 20,10 Q30,2 38,10" />
+          </svg>
+        </div>
+      </div>
+      <svg
+        class="hero-mountains"
+        viewBox="0 0 1440 320"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0,320 L0,220 L90,140 L180,185 L290,88 L400,158 L510,52 L620,138 L720,68 L840,148 L960,90 L1080,165 L1185,105 L1300,158 L1440,118 L1440,320Z"
+          fill="rgba(255,255,255,0.035)"
+        />
+        <path
+          d="M0,320 L0,262 L70,218 L160,245 L270,172 L375,215 L490,142 L600,202 L700,158 L820,215 L930,168 L1050,222 L1160,178 L1285,218 L1440,192 L1440,320Z"
+          fill="rgba(255,255,255,0.045)"
+        />
+        <path
+          d="M0,320 L0,295 L100,268 L210,285 L330,252 L445,275 L560,240 L670,268 L780,248 L900,272 L1010,252 L1130,275 L1250,258 L1370,278 L1440,265 L1440,320Z"
+          fill="rgba(255,255,255,0.03)"
+        />
+      </svg>
+      <div class="hero-badge">Kasar Devi · Dinapani · Almora</div>
+      <h1>Woodpecker's <em>Nest</em></h1>
+      <p class="hero-sub">
+        Sunrise View Stay &nbsp;·&nbsp; Quiet Escape &nbsp;·&nbsp; Kumaon
+        Himalayas
+      </p>
+      <p class="hero-tagline">
+        Everything you need during your stay — right here.
+      </p>
+    </section>
+    <div class="cards-sec">
+      <div class="welcome-msg">
+        🌿 Welcome! We're so glad you're here. Make yourself at home
+      </div>
+      <div class="link-cards">
+        <div
+          class="link-card"
+          id="wifi-card"
+          onclick="toggleWifi()"
+          role="button"
+          aria-expanded="false"
+          tabindex="0"
+        >
+          <div class="card-icon card-icon-wifi">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12.55a11 11 0 0 1 14.08 0" />
+              <path d="M1.42 9a16 16 0 0 1 21.16 0" />
+              <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+              <circle cx="12" cy="20" r="1" fill="currentColor" />
+            </svg>
+          </div>
+          <div class="card-body">
+            <span class="card-label">Connectivity</span>
+            <div class="card-title">Wi-Fi Details</div>
+            <div class="card-desc">
+              Tap to reveal your network name &amp; password
+            </div>
+          </div>
+          <span class="card-expand-hint" id="wifi-hint">Tap to expand</span>
+        </div>
+        <div class="wifi-detail" id="wifi-detail">
+          <div class="wifi-row">
+            <span class="wifi-key">Network</span>
+            <span class="wifi-val" id="ssid-val"
+              >Homestay-ssid1 / Homestay-ssid1-5G</span
+            >
+            <button
+              class="copy-btn"
+              id="copy-ssid"
+              onclick="copyText('ssid-val', 'copy-ssid')"
+            >
+              Copy
+            </button>
+          </div>
+          <div class="wifi-row">
+            <span class="wifi-key">Password</span>
+            <span class="wifi-val" id="pass-val">Dinapani@143</span>
+            <button
+              class="copy-btn"
+              id="copy-pass"
+              onclick="copyText('pass-val', 'copy-pass')"
+            >
+              Copy
+            </button>
+          </div>
+        </div>
+        <a
+          class="link-card"
+          href="https://www.instagram.com/woodpeckersnestin"
+          target="_blank"
+          rel="noopener"
+          ><div class="card-icon card-icon-insta">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </div>
+          <div class="card-body">
+            <span class="card-label">Follow Us</span>
+            <div class="card-title">Instagram</div>
+            <div class="card-desc">
+              @woodpeckersnestin — photos, stories &amp; updates from the nest
+            </div>
+          </div>
+          <div class="card-arrow">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg></div></a
+        ><a class="link-card" href="m8x2k9fw.html"
+          ><div class="card-icon card-icon-menu">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M3 6h18M3 12h18M3 18h12" />
+              <path d="M19 16l2 2-2 2" />
+            </svg>
+          </div>
+          <div class="card-body">
+            <span class="card-label">Food &amp; Drinks</span>
+            <div class="card-title">Our Menu</div>
+            <div class="card-desc">
+              Home-cooked Kumaoni meals, chai, snacks &amp; more — made fresh
+              daily
+            </div>
+          </div>
+          <div class="card-arrow">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg></div
+        ></a>
+      </div>
+      <div class="ornament">· · · · ·</div>
+    </div>
+    <footer>
+      <p>
+        © 2025 Woodpecker's Nest · Dinapani, Uttarakhand ·
+        <a href="index.html">Our Story</a> ·
+        <a href="https://wa.me/919411544618" target="_blank">WhatsApp</a>
+      </p>
+      <p style="opacity: 0.6; margin-top: 0.4rem; font-size: 0.68rem">
+        Homestay near Kasardevi · Almora · Binsar · Jageshwar Dham
+      </p>
+    </footer>
+    <script>
+      function toggleWifi() {
+        const t = document.getElementById("wifi-detail"),
+          e = document.getElementById("wifi-card"),
+          n = document.getElementById("wifi-hint"),
+          o = t.classList.toggle("open");
+        (e.setAttribute("aria-expanded", o),
+          (n.textContent = o ? "Tap to close" : "Tap to expand"));
+      }
+      function copyText(t, e) {
+        const n = document.getElementById(t).textContent;
+        navigator.clipboard.writeText(n).then(() => {
+          const t = document.getElementById(e);
+          ((t.textContent = "Copied!"),
+            t.classList.add("copied"),
+            setTimeout(() => {
+              ((t.textContent = "Copy"), t.classList.remove("copied"));
+            }, 2e3));
+        });
+      }
+      !(function () {
+        const t = document.getElementById("stars");
+        for (let e = 0; e < 60; e++) {
+          const e = document.createElement("div");
+          e.className = "star";
+          const n = 2.5 * Math.random() + 1;
+          ((e.style.cssText = `\n        width:${n}px; height:${n}px;\n        top:${100 * Math.random()}%;\n        left:${100 * Math.random()}%;\n        animation-delay:${5 * Math.random()}s;\n        animation-duration:${3 + 4 * Math.random()}s;\n      `),
+            t.appendChild(e));
+        }
+      })();
+    </script>
+  </body>
+</html>
