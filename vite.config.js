@@ -19,6 +19,7 @@ export default defineConfig({
         main:     resolve(__dirname, 'index.html'),
         welcome:  resolve(__dirname, 'welcome.html'),
         menu:     resolve(__dirname, 'm8x2k9fw.html'),
+        enquiry:  resolve(__dirname, 'enquiry.html'),
       },
       output: {
         assetFileNames: 'assets/[name].[ext]',
