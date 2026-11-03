@@ -1,0 +1,1988 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <title>Photo Gallery &amp; Rooms | Woodpecker's Nest — Kasardevi, Almora</title>
+    <meta
+      name="description"
+      content="Explore photos of Woodpecker's Nest homestay in Dinapani near Kasar Devi, Almora. View our three bedrooms, en-suite bathrooms, sunrise balconies, kitchen, and Himalayan mountain views."
+    />
+    <meta
+      name="keywords"
+      content="woodpeckers nest photos, kasardevi homestay rooms, almora homestay photos, dinapani rooms, rooms near kasar devi almora, binsar homestay rooms, sunrise view stay photos"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://woodpeckersnest.in/gallery.html" />
+    <style>
+      *,
+      :before,
+      :after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      :root {
+        --green: #4a7c59;
+        --green-dark: #32573d;
+        --green-light: #7baf8a;
+        --green-pale: #edf5ef;
+        --green-mid: #c8dfce;
+        --warm-white: #fbf8f3;
+        --warm-off: #f4efe6;
+        --brown: #7c4e32;
+        --brown-dark: #4a2e1a;
+        --brown-light: #b8845a;
+        --gold: #d4a373;
+        --text: #2e2118;
+        --muted: #6b5a4e;
+        --border-color: #e2d9cd;
+        --shadow-soft: 0 8px 30px rgba(74, 124, 89, 0.08), 0 2px 8px rgba(74, 46, 26, 0.04);
+        --shadow-hover: 0 16px 40px rgba(74, 124, 89, 0.14), 0 6px 16px rgba(74, 46, 26, 0.08);
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background: var(--warm-white);
+        color: var(--text);
+        -webkit-font-smoothing: antialiased;
+        min-height: 100vh;
+        font-family: Georgia, "Times New Roman", serif;
+        line-height: 1.7;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* ================= Hero Section with Photographic Mountain Background ================= */
+      .hero {
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 52vh;
+        padding: 4.8rem 1.5rem 5.5rem;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        background-color: #213326;
+      }
+      .hero-bg {
+        position: absolute;
+        inset: 0;
+        background-image: url("./assets/images/additional_photos/IMG_5909.jpg");
+        background-size: cover;
+        background-position: center 45%;
+        filter: brightness(0.78);
+        transform: scale(1.02);
+        animation: heroZoom 18s ease-in-out infinite alternate;
+        z-index: 1;
+      }
+      @keyframes heroZoom {
+        0% {
+          transform: scale(1.02);
+        }
+        100% {
+          transform: scale(1.09);
+        }
+      }
+      .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(20, 36, 26, 0.78) 0%,
+          rgba(44, 28, 16, 0.84) 62%,
+          rgba(30, 20, 12, 0.95) 100%
+        );
+        z-index: 2;
+      }
+      .hero-content {
+        position: relative;
+        z-index: 5;
+        max-width: 860px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* Top Navigation Bar */
+      .top-nav {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        right: 1.5rem;
+        z-index: 20;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .nav-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #ffffffe6;
+        text-decoration: none;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 0.82rem;
+        font-weight: 500;
+        background: rgba(255, 255, 255, 0.16);
+        border: 1px solid rgba(255, 255, 255, 0.32);
+        padding: 0.45rem 1.15rem;
+        border-radius: 50px;
+        backdrop-filter: blur(10px);
+        transition: all 0.22s ease;
+      }
+      .nav-btn:hover {
+        background: rgba(255, 255, 255, 0.3);
+        color: #fff;
+        transform: translateY(-2px);
+      }
+      .nav-btn-cta {
+        background: var(--green);
+        border-color: var(--green-light);
+        color: #fff;
+        font-weight: 600;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+      }
+      .nav-btn-cta:hover {
+        background: #366042;
+        color: #fff;
+        border-color: #92c4a0;
+      }
+      .nav-btn svg {
+        width: 15px;
+        height: 15px;
+      }
+
+      .hero-badge {
+        color: #ffffffed;
+        letter-spacing: 3.5px;
+        text-transform: uppercase;
+        background: rgba(255, 255, 255, 0.16);
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        border-radius: 50px;
+        margin-bottom: 1.2rem;
+        padding: 0.4rem 1.35rem;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 0.68rem;
+        font-weight: 600;
+        display: inline-block;
+        backdrop-filter: blur(8px);
+        animation: 0.9s both fadeUp;
+      }
+      .hero h1 {
+        color: #fff;
+        letter-spacing: -1.2px;
+        margin-bottom: 0.7rem;
+        font-size: clamp(2.4rem, 6vw, 3.8rem);
+        font-weight: 400;
+        line-height: 1.15;
+        text-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+        animation: 0.9s 0.12s both fadeUp;
+      }
+      .hero h1 em {
+        color: #c9e8bb;
+        font-style: normal;
+      }
+      .hero-sub {
+        color: #ffffffe0;
+        max-width: 660px;
+        font-size: clamp(0.98rem, 2.2vw, 1.14rem);
+        line-height: 1.7;
+        text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
+        animation: 0.9s 0.25s both fadeUp;
+      }
+
+      /* Hero Micro-Specs Pill Bar */
+      .hero-specs-bar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.6rem;
+        margin-top: 1.6rem;
+        animation: 0.9s 0.38s both fadeUp;
+      }
+      .hero-spec-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        background: rgba(255, 255, 255, 0.14);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        color: #fff;
+        padding: 0.35rem 0.95rem;
+        border-radius: 50px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 0.78rem;
+        font-weight: 500;
+        backdrop-filter: blur(8px);
+      }
+      .hero-spec-pill svg {
+        width: 14px;
+        height: 14px;
+        color: #c8e6ba;
+      }
+
+      @keyframes fadeUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: none;
+        }
+      }
+
+      /* ================= Sticky Category Filter / Scroll-Spy Bar ================= */
+      .gallery-filter-wrap {
+        position: sticky;
+        top: 0;
+        z-index: 90;
+        background: rgba(251, 248, 243, 0.95);
+        backdrop-filter: blur(14px);
+        border-bottom: 1px solid var(--green-mid);
+        padding: 0.85rem 1.2rem;
+        box-shadow: 0 4px 18px rgba(44, 80, 64, 0.06);
+        /* Subtle edge mask for mobile horizontal scrolling */
+        mask-image: linear-gradient(
+          to right,
+          transparent 0,
+          black 20px,
+          black calc(100% - 20px),
+          transparent 100%
+        );
+        -webkit-mask-image: linear-gradient(
+          to right,
+          transparent 0,
+          black 20px,
+          black calc(100% - 20px),
+          transparent 100%
+        );
+      }
+      .gallery-filter-inner {
+        max-width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.55rem;
+        overflow-x: auto;
+        padding: 0.15rem 1rem;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+      .gallery-filter-inner::-webkit-scrollbar {
+        display: none;
+      }
+      .filter-btn {
+        background: #fff;
+        border: 1px solid var(--green-mid);
+        color: var(--muted);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding: 0.45rem 1.05rem;
+        border-radius: 50px;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: all 0.22s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        text-decoration: none;
+        user-select: none;
+      }
+      .filter-btn:hover {
+        background: var(--green-pale);
+        color: var(--green);
+        border-color: var(--green-light);
+        transform: translateY(-1px);
+      }
+      .filter-btn.active {
+        background: var(--green);
+        color: #fff;
+        border-color: var(--green);
+        box-shadow: 0 3px 12px rgba(74, 124, 89, 0.28);
+      }
+      .filter-btn .badge-count {
+        background: rgba(0, 0, 0, 0.08);
+        padding: 0.12rem 0.48rem;
+        border-radius: 20px;
+        font-size: 0.72rem;
+      }
+      .filter-btn.active .badge-count {
+        background: rgba(255, 255, 255, 0.28);
+        color: #fff;
+      }
+
+      /* Quick Room Compare Strip */
+      .gallery-summary-strip {
+        max-width: 1180px;
+        margin: 2.2rem auto 0;
+        padding: 0 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      .summary-tagline {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 0.85rem;
+        color: var(--muted);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .summary-tagline svg {
+        width: 16px;
+        height: 16px;
+        color: var(--green);
+      }
+      .summary-pills {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+      }
+      .summary-chip {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 0.75rem;
+        font-weight: 500;
+        background: #fff;
+        border: 1px solid var(--border-color);
+        color: var(--text);
+        padding: 0.25rem 0.75rem;
+        border-radius: 30px;
+      }
+
+      /* ================= Main Content Container ================= */
+      .gallery-container {
+        max-width: 1180px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 2.5rem 1.5rem 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+      }
+
+      /* Room / Section Widget */
+      .gallery-widget {
+        background: #fff;
+        border: 1px solid var(--green-mid);
+        border-radius: 24px;
+        padding: 2.6rem 2.4rem;
+        box-shadow: var(--shadow-soft);
+        scroll-margin-top: 5rem;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+      .gallery-widget:hover {
+        box-shadow: var(--shadow-hover);
+      }
+
+      .widget-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-bottom: 1px solid var(--green-pale);
+        padding-bottom: 1.6rem;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+      }
+      .widget-title-area {
+        max-width: 760px;
+      }
+      .widget-tag-row {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 0.45rem;
+        flex-wrap: wrap;
+      }
+      .widget-tag {
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        color: var(--brown);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 0.7rem;
+        font-weight: 700;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+      }
+      .widget-tag::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--green);
+        display: inline-block;
+      }
+      .widget-highlight-badge {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: var(--green-dark);
+        background: var(--green-pale);
+        border: 1px solid var(--green-mid);
+        padding: 0.15rem 0.65rem;
+        border-radius: 50px;
+      }
+
+      .widget-title {
+        color: var(--brown-dark);
+        font-size: clamp(1.7rem, 3.2vw, 2.25rem);
+        font-weight: 400;
+        line-height: 1.25;
+        margin-bottom: 0.5rem;
+      }
+      .widget-desc {
+        color: var(--muted);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 0.94rem;
+        line-height: 1.65;
+        margin-bottom: 1.1rem;
+      }
+
+      /* Enhanced Room Specs Strip */
+      .room-specs-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+      .spec-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.42rem;
+        background: var(--warm-off);
+        border: 1px solid var(--border-color);
+        color: var(--text);
+        padding: 0.28rem 0.78rem;
+        border-radius: 8px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 0.77rem;
+        font-weight: 500;
+      }
+      .spec-item svg {
+        width: 14px;
+        height: 14px;
+        color: var(--brown);
+        flex-shrink: 0;
+      }
+
+      .widget-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.5rem;
+      }
+      .book-room-btn {
+        background: var(--green);
+        color: #fff;
+        border: 1px solid var(--green-dark);
+        padding: 0.55rem 1.25rem;
+        border-radius: 50px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 0.84rem;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        box-shadow: 0 4px 14px rgba(74, 124, 89, 0.22);
+        transition: all 0.22s ease;
+        white-space: nowrap;
+      }
+      .book-room-btn:hover {
+        background: #366042;
+        color: #fff;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 18px rgba(74, 124, 89, 0.32);
+      }
+      .book-room-btn svg {
+        width: 14px;
+        height: 14px;
+      }
+      .book-guarantee-note {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 0.72rem;
+        color: var(--muted);
+      }
+
+      /* Upsell Callout for Kitchen/Full Floor */
+      .full-floor-upsell-banner {
+        background: linear-gradient(135deg, #fbf4ea 0%, #f4e9db 100%);
+        border: 1px solid #d9b897;
+        border-radius: 14px;
+        padding: 1.1rem 1.4rem;
+        margin-bottom: 1.6rem;
+        display: flex;
+        align-items: flex-start;
+        gap: 0.9rem;
+      }
+      .full-floor-upsell-banner svg {
+        width: 22px;
+        height: 22px;
+        color: var(--brown);
+        flex-shrink: 0;
+        margin-top: 0.15rem;
+      }
+      .full-floor-upsell-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      }
+      .full-floor-upsell-text strong {
+        display: block;
+        color: var(--brown-dark);
+        font-size: 0.88rem;
+        margin-bottom: 0.2rem;
+      }
+      .full-floor-upsell-text p {
+        font-size: 0.82rem;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      /* ================= Editorial Bento Photo Grid ================= */
+      .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+      }
+      .photo-card {
+        position: relative;
+        border-radius: 14px;
+        overflow: hidden;
+        background: var(--warm-off);
+        aspect-ratio: 4 / 3;
+        cursor: pointer;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+        transition: transform 0.28s ease, box-shadow 0.28s ease;
+      }
+      .photo-card.featured {
+        grid-column: span 2;
+        aspect-ratio: 16 / 9;
+      }
+      .photo-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 28px rgba(74, 46, 26, 0.16);
+      }
+      .photo-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.45s cubic-bezier(0.2, 0, 0.2, 1);
+      }
+      .photo-card:hover img {
+        transform: scale(1.05);
+      }
+
+
+      /* Hover Overlay & Caption */
+      .photo-overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 4;
+        background: linear-gradient(
+          to top,
+          rgba(34, 22, 14, 0.88) 0%,
+          rgba(34, 22, 14, 0.35) 55%,
+          transparent 100%
+        );
+        opacity: 0;
+        transition: opacity 0.25s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 1.25rem;
+      }
+      .photo-card:hover .photo-overlay {
+        opacity: 1;
+      }
+      .photo-caption {
+        color: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 0.85rem;
+        font-weight: 500;
+        line-height: 1.42;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+      }
+
+      /* Zoom Icon in Top-Right */
+      .photo-zoom-icon {
+        position: absolute;
+        top: 0.85rem;
+        right: 0.85rem;
+        z-index: 5;
+        background: rgba(255, 255, 255, 0.88);
+        color: var(--brown-dark);
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.22);
+        opacity: 0;
+        transform: scale(0.85);
+        transition: all 0.22s ease;
+      }
+      .photo-card:hover .photo-zoom-icon {
+        opacity: 1;
+        transform: scale(1);
+      }
+      .photo-zoom-icon svg {
+        width: 15px;
+        height: 15px;
+      }
+
+      /* ================= Bottom CTA Banner ================= */
+      .gallery-bottom-cta {
+        background: linear-gradient(145deg, #234233 0%, #355e46 55%, #52371e 100%);
+        border-radius: 26px;
+        padding: 4rem 2.5rem;
+        text-align: center;
+        color: #fff;
+        box-shadow: 0 16px 42px rgba(44, 80, 64, 0.25);
+        position: relative;
+        overflow: hidden;
+      }
+      .gallery-bottom-cta::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        right: -20%;
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(circle, rgba(200, 230, 186, 0.15) 0%, transparent 70%);
+        border-radius: 50%;
+        pointer-events: none;
+      }
+      .cta-trust-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50px;
+        padding: 0.35rem 1.1rem;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 0.76rem;
+        font-weight: 600;
+        margin-bottom: 1.2rem;
+        backdrop-filter: blur(8px);
+      }
+      .cta-trust-badge svg {
+        width: 14px;
+        height: 14px;
+        color: #ffd166;
+        fill: #ffd166;
+      }
+      .gallery-bottom-cta h3 {
+        font-size: clamp(1.9rem, 4.2vw, 2.7rem);
+        font-weight: 400;
+        margin-bottom: 0.9rem;
+        line-height: 1.2;
+      }
+      .gallery-bottom-cta p {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        color: #ffffffd6;
+        max-width: 620px;
+        margin: 0 auto 2.2rem;
+        font-size: 1.02rem;
+        line-height: 1.65;
+      }
+      .cta-btns {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      .cta-primary-btn {
+        background: var(--green-light);
+        color: #1a3526;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 0.95rem;
+        font-weight: 700;
+        padding: 0.9rem 2.4rem;
+        border-radius: 50px;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.55rem;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.28);
+        transition: all 0.22s ease;
+      }
+      .cta-primary-btn:hover {
+        background: #fff;
+        color: var(--brown-dark);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+      }
+      .cta-secondary-btn {
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        color: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 0.95rem;
+        font-weight: 600;
+        padding: 0.9rem 1.8rem;
+        border-radius: 50px;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.55rem;
+        backdrop-filter: blur(8px);
+        transition: all 0.22s ease;
+      }
+      .cta-secondary-btn:hover {
+        background: rgba(255, 255, 255, 0.28);
+        color: #fff;
+        transform: translateY(-2px);
+      }
+
+      /* ================= Enhanced Lightbox Modal with Breadcrumbs & Filmstrip ================= */
+      .lightbox-modal {
+        position: fixed;
+        inset: 0;
+        z-index: 999;
+        background: rgba(14, 10, 7, 0.96);
+        backdrop-filter: blur(12px);
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1.2rem;
+        opacity: 0;
+        transition: opacity 0.25s ease;
+      }
+      .lightbox-modal.active {
+        display: flex;
+        opacity: 1;
+      }
+
+      /* Lightbox Top Header Bar */
+      .lightbox-top-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1300px;
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 0.8rem;
+        color: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      }
+      .lightbox-room-meta {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+      .lightbox-room-tag {
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+        color: var(--gold);
+      }
+      .lightbox-counter-pill {
+        background: rgba(255, 255, 255, 0.15);
+        padding: 0.18rem 0.6rem;
+        border-radius: 20px;
+        font-size: 0.72rem;
+        color: #ffffffcc;
+        letter-spacing: 1px;
+      }
+      .lightbox-close-btn {
+        background: rgba(255, 255, 255, 0.14);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: #fff;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background 0.2s ease, transform 0.2s ease;
+      }
+      .lightbox-close-btn:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: scale(1.08);
+      }
+      .lightbox-close-btn svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      /* Lightbox Center Content */
+      .lightbox-content {
+        position: relative;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      .lightbox-img-wrap {
+        position: relative;
+        max-width: 100%;
+        max-height: 66vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .lightbox-img {
+        max-width: 100%;
+        max-height: 66vh;
+        object-fit: contain;
+        border-radius: 12px;
+        box-shadow: 0 12px 48px rgba(0, 0, 0, 0.75);
+        user-select: none;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+      }
+      .lightbox-img.fade-out {
+        opacity: 0.3;
+        transform: scale(0.98);
+      }
+
+      .lightbox-nav-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255, 255, 255, 0.16);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: #fff;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.22s ease;
+        user-select: none;
+        z-index: 10;
+      }
+      .lightbox-nav-btn:hover {
+        background: rgba(255, 255, 255, 0.35);
+        transform: translateY(-50%) scale(1.08);
+      }
+      .lightbox-prev-btn {
+        left: 0.5rem;
+      }
+      .lightbox-next-btn {
+        right: 0.5rem;
+      }
+      .lightbox-nav-btn svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      /* Lightbox Caption & Quick Book CTA */
+      .lightbox-info-row {
+        margin-top: 0.85rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.5rem;
+        width: 100%;
+        max-width: 900px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      }
+      .lightbox-caption {
+        font-size: 0.92rem;
+        font-weight: 500;
+        color: #ffffffee;
+        line-height: 1.4;
+      }
+      .lightbox-book-cta {
+        background: var(--green);
+        color: #fff;
+        text-decoration: none;
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding: 0.45rem 1.1rem;
+        border-radius: 50px;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        white-space: nowrap;
+        transition: all 0.2s ease;
+      }
+      .lightbox-book-cta:hover {
+        background: var(--green-light);
+        color: #1a3526;
+      }
+      .lightbox-book-cta svg {
+        width: 13px;
+        height: 13px;
+      }
+
+      /* Bottom Thumbnail Filmstrip Rail */
+      .lightbox-filmstrip {
+        max-width: 1000px;
+        width: 100%;
+        margin: 0.75rem auto 0;
+        display: flex;
+        gap: 0.55rem;
+        overflow-x: auto;
+        padding: 0.4rem 0.2rem;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+      }
+      .lightbox-thumb {
+        width: 62px;
+        height: 44px;
+        border-radius: 6px;
+        overflow: hidden;
+        cursor: pointer;
+        opacity: 0.45;
+        border: 2px solid transparent;
+        flex-shrink: 0;
+        transition: all 0.2s ease;
+      }
+      .lightbox-thumb:hover {
+        opacity: 0.85;
+      }
+      .lightbox-thumb.active {
+        opacity: 1;
+        border-color: var(--gold);
+        transform: scale(1.05);
+      }
+      .lightbox-thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+
+      /* ================= Footer ================= */
+      footer {
+        text-align: center;
+        color: #ffffff66;
+        background: #24150b;
+        padding: 2.8rem 1.5rem;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 0.8rem;
+        margin-top: auto;
+      }
+      footer a {
+        color: #c8e6ba;
+        text-decoration: none;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      /* ================= Responsive Breakpoints ================= */
+      @media (max-width: 960px) {
+        .photo-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .photo-card.featured {
+          grid-column: span 2;
+        }
+        .gallery-widget {
+          padding: 2rem 1.6rem;
+        }
+        .lightbox-info-row {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 0.8rem;
+        }
+      }
+
+      @media (max-width: 680px) {
+        .hero {
+          min-height: 42vh;
+          padding: 4.8rem 1.2rem 4rem;
+        }
+        .top-nav {
+          top: 1rem;
+          left: 1rem;
+          right: 1rem;
+        }
+        .nav-btn {
+          padding: 0.38rem 0.85rem;
+          font-size: 0.74rem;
+        }
+        .hero-specs-bar {
+          display: none; /* Keep hero clean on small screens */
+        }
+
+        /* 2-Column Mobile Bento Layout (drastically improves vertical scroll) */
+        .photo-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 0.75rem;
+        }
+        .photo-card {
+          border-radius: 10px;
+          aspect-ratio: 1 / 1;
+        }
+        .photo-card.featured {
+          grid-column: span 2;
+          aspect-ratio: 16 / 10;
+        }
+
+        .gallery-widget {
+          padding: 1.5rem 1.1rem;
+          border-radius: 18px;
+        }
+        .widget-header {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1.1rem;
+        }
+        .widget-actions {
+          width: 100%;
+          align-items: stretch;
+        }
+        .book-room-btn {
+          justify-content: center;
+        }
+
+        .lightbox-filmstrip {
+          display: none; /* Hide filmstrip on small mobile to maximize image area */
+        }
+        .lightbox-img {
+          max-height: 72vh;
+        }
+        .lightbox-nav-btn {
+          width: 42px;
+          height: 42px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- ================= Top Navigation & Photographic Hero ================= -->
+    <header class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <nav class="top-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          Back to Home
+        </a>
+        <a href="enquiry.html" class="nav-btn nav-btn-cta">
+          Check Availability &amp; Book
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </a>
+      </nav>
+
+      <div class="hero-content">
+        <div class="hero-badge">Woodpecker's Nest · Dinapani, Kumaon Himalayas</div>
+        <h1>Spaces &amp; <em>Photo Gallery</em></h1>
+        <p class="hero-sub">
+          Explore our three quiet bedrooms, en-suite bathrooms, private sunrise balconies, and the serene Kumaon ridgelines surrounding us.
+        </p>
+
+        <!-- Quick-Specs Strip -->
+        <div class="hero-specs-bar">
+          <span class="hero-spec-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>
+            East-Facing Sunrise
+          </span>
+          <span class="hero-spec-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20M4 20V10l8-7 8 7v10"/></svg>
+            3 Ensuite Bedrooms
+          </span>
+          <span class="hero-spec-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0114.08 0"/></svg>
+            50+ Mbps High-Speed Wi-Fi
+          </span>
+          <span class="hero-spec-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
+            Home-Cooked Kumaoni Meals
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= Sticky Category Filter / Scroll-Spy Bar ================= -->
+    <nav class="gallery-filter-wrap" aria-label="Gallery category navigation">
+      <div class="gallery-filter-inner" id="filterNav">
+        <a href="#all" class="filter-btn active" data-target="all">
+          <span>All Spaces</span>
+          <span class="badge-count">30</span>
+        </a>
+        <a href="#room1" class="filter-btn" data-target="room1">
+          <span>Room 01 · King Room</span>
+          <span class="badge-count">7</span>
+        </a>
+        <a href="#room2" class="filter-btn" data-target="room2">
+          <span>Room 02 · Double Room</span>
+          <span class="badge-count">6</span>
+        </a>
+        <a href="#room3" class="filter-btn" data-target="room3">
+          <span>Room 03 · Queen Room</span>
+          <span class="badge-count">6</span>
+        </a>
+        <a href="#additional" class="filter-btn" data-target="additional">
+          <span>Outdoor &amp; Views</span>
+          <span class="badge-count">7</span>
+        </a>
+        <a href="#interior" class="filter-btn" data-target="interior">
+          <span>Kitchen &amp; Hall</span>
+          <span class="badge-count">4</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Room Comparison Quick Micro-Strip -->
+    <div class="gallery-summary-strip">
+      <div class="summary-tagline">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <span>Quiet Dinapani ridge stay · 3.5 km from Kasar Devi Temple</span>
+      </div>
+      <div class="summary-pills">
+        <span class="summary-chip">Room 01: King Bed + Valley Workstation</span>
+        <span class="summary-chip">Room 02: Double Bed + Green Views</span>
+        <span class="summary-chip">Room 03: Queen Bed + Private Balcony</span>
+      </div>
+    </div>
+
+    <!-- ================= Main Gallery Container ================= -->
+    <main class="gallery-container">
+
+      <!-- ================= Room 1: King Room With Mountain View ================= -->
+      <section class="gallery-widget" id="room1" data-category="room1">
+        <div class="widget-header">
+          <div class="widget-title-area">
+            <div class="widget-tag-row">
+              <span class="widget-tag">Room 01</span>
+              <span class="widget-highlight-badge">East-Facing Sunrise View</span>
+            </div>
+            <h2 class="widget-title">King Room With Mountain View</h2>
+            <p class="widget-desc">
+              A bright, peaceful king bedroom opening to crisp morning light and sweeping valley views. Crafted with handcrafted warm pine woodwork, an ergonomic workstation, and pure mountain tranquility.
+            </p>
+            <div class="room-specs-grid">
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20M4 20V10l8-7 8 7v10"/></svg>
+                King Bed (6×6 ft)
+              </span>
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                Sleeps 2 Adults
+              </span>
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17L9 11 13 15 18 9 21 12"/></svg>
+                Panoramic Valley View
+              </span>
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                Dedicated Workspace Desk
+              </span>
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
+                Private Bath + 24/7 Geyser
+              </span>
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0114.08 0"/></svg>
+                50+ Mbps Wi-Fi
+              </span>
+            </div>
+          </div>
+          <div class="widget-actions">
+            <a href="enquiry.html" class="book-room-btn">
+              <span>Book King Room</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+            <span class="book-guarantee-note">Best direct booking rates</span>
+          </div>
+        </div>
+
+        <div class="photo-grid">
+          <div class="photo-card featured" data-room-name="Room 01 · King Room" data-caption="King Room With Mountain View — Wide bedroom overview featuring king bed, natural pine finish, and valley light">
+            <img src="./assets/images/room1/IMG_5737.jpeg" alt="Woodpecker's Nest King Room With Mountain View wide view" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">King Room With Mountain View — Spacious layout with king bed and valley sunlight</p>
+            </div>
+          </div>
+
+          <div class="photo-card" data-room-name="Room 01 · King Room" data-caption="King Room With Mountain View — Comfortable king bed with plush fresh linens and morning warmth">
+            <img src="./assets/images/room1/IMG_5715.jpeg" alt="Woodpecker's Nest King Room With Mountain View bed" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">King Room With Mountain View — Fresh linens and morning sunlight</p>
+            </div>
+          </div>
+
+          <div class="photo-card" data-room-name="Room 01 · King Room" data-caption="King Room With Mountain View — Cozy room corner with window overlooking the pine hills">
+            <img src="./assets/images/room1/IMG_5770.jpeg" alt="Woodpecker's Nest King Room With Mountain View window corner" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">King Room With Mountain View — Window corner &amp; pine forest ambiance</p>
+            </div>
+          </div>
+
+          <div class="photo-card" data-room-name="Room 01 · King Room" data-caption="King Room With Mountain View — Reading nook and dedicated workstation setup for remote workcations">
+            <img src="./assets/images/room1/IMG_5771.jpeg" alt="Woodpecker's Nest King Room With Mountain View workstation setup" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">King Room With Mountain View — Work-friendly seating &amp; reading space</p>
+            </div>
+          </div>
+
+          <div class="photo-card" data-room-name="Room 01 · King Room" data-caption="King Room With Mountain View — Handcrafted wooden headboard and warm bedside lighting">
+            <img src="./assets/images/room1/IMG_5776.jpeg" alt="Woodpecker's Nest King Room With Mountain View bedside details" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">King Room With Mountain View — Headboard &amp; handcrafted wooden accents</p>
+            </div>
+          </div>
+
+          <div class="photo-card" data-room-name="Room 01 · King Room" data-caption="King Room With Mountain View — Spotless en-suite bathroom with clean shower and hygienic fixtures">
+            <img src="./assets/images/room1/IMG_6393.jpeg" alt="Woodpecker's Nest King Room With Mountain View attached bathroom" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">King Room With Mountain View — Private attached bathroom</p>
+            </div>
+          </div>
+
+          <div class="photo-card" data-room-name="Room 01 · King Room" data-caption="King Room With Mountain View — 24/7 hot water geyser and clean modern bathroom vanity">
+            <img src="./assets/images/room1/IMG_6396.jpeg" alt="Woodpecker's Nest King Room With Mountain View bathroom fixtures" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">King Room With Mountain View — 24/7 hot water &amp; hygienic bath setup</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Room 2: Double Room With Mountain View ================= -->
+      <section class="gallery-widget" id="room2" data-category="room2">
+        <div class="widget-header">
+          <div class="widget-title-area">
+            <div class="widget-tag-row">
+              <span class="widget-tag">Room 02</span>
+              <span class="widget-highlight-badge">Tranquil Hill &amp; Bamboo View</span>
+            </div>
+            <h2 class="widget-title">Double Room With Mountain View</h2>
+            <p class="widget-desc">
+              Enjoy a comfortable, well-lit sanctuary with peaceful mountain views complemented by lush green bamboo outside the window. A generous floor plan designed for slow, restorative living in the Kumaon hills.
+            </p>
+            <div class="room-specs-grid">
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20M4 20V10l8-7 8 7v10"/></svg>
+                Comfortable Double Bed
+              </span>
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                Sleeps 2 Adults
+              </span>
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17L9 11 13 15 18 9 21 12"/></svg>
+                Forest &amp; Mountain View
+              </span>
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+                Private En-Suite Bath
+              </span>
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                24/7 Geyser Hot Water
+              </span>
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0114.08 0"/></svg>
+                Fast Internet Connection
+              </span>
+            </div>
+          </div>
+          <div class="widget-actions">
+            <a href="enquiry.html" class="book-room-btn">
+              <span>Book Double Room</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+            <span class="book-guarantee-note">Flexible date changes</span>
+          </div>
+        </div>
+
+        <div class="photo-grid">
+          <div class="photo-card featured" data-room-name="Room 02 · Double Room" data-caption="Double Room With Mountain View — Bedroom overview highlighting tranquil ambiance and natural pine textures">
+            <img src="./assets/images/room2/IMG_5744.jpeg" alt="Woodpecker's Nest Double Room With Mountain View wide overview" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">Double Room With Mountain View — Warm wood interior &amp; quiet bedroom setting</p>
+            </div>
+          </div>
+
+          <div class="photo-card" data-room-name="Room 02 · Double Room" data-caption="Double Room With Mountain View — Generous double bed with soft warm comforter for cool mountain nights">
+            <img src="./assets/images/room2/IMG_5765.jpeg" alt="Woodpecker's Nest Double Room With Mountain View bed" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">Double Room With Mountain View — Double bed with plush bedding</p>
+            </div>
+          </div>
+
+          <div class="photo-card" data-room-name="Room 02 · Double Room" data-caption="Double Room With Mountain View — Large picture window bringing in natural forest light and fresh mountain air">
+            <img src="./assets/images/room2/IMG_5766.jpeg" alt="Woodpecker's Nest Double Room With Mountain View window light" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">Double Room With Mountain View — Window views of greenery &amp; sky</p>
+            </div>
+          </div>
+
+          <div class="photo-card" data-room-name="Room 02 · Double Room" data-caption="Double Room With Mountain View — Side view showing uncluttered floor space and peaceful rustic ambiance">
+            <img src="./assets/images/room2/IMG_5767.jpeg" alt="Woodpecker's Nest Double Room With Mountain View side view" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">Double Room With Mountain View — Clean, clutter-free mountain living</p>
+            </div>
+          </div>
+
+          <div class="photo-card" data-room-name="Room 02 · Double Room" data-caption="Double Room With Mountain View — Clean, well-maintained attached bathroom with hot shower">
+            <img src="./assets/images/room2/IMG_6398.jpeg" alt="Woodpecker's Nest Double Room With Mountain View bathroom" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">Double Room With Mountain View — Attached washroom &amp; shower area</p>
+            </div>
+          </div>
+
+          <div class="photo-card" data-room-name="Room 02 · Double Room" data-caption="Double Room With Mountain View — Bathroom vanity mirror, modern fixtures, and hygiene essentials">
+            <img src="./assets/images/room2/IMG_6400.jpeg" alt="Woodpecker's Nest Double Room With Mountain View bathroom vanity" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">Double Room With Mountain View — Vanity setup &amp; hot water</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Room 3: Queen Room With Balcony ================= -->
+      <section class="gallery-widget" id="room3" data-category="room3">
+        <div class="widget-header">
+          <div class="widget-title-area">
+            <div class="widget-tag-row">
+              <span class="widget-tag">Room 03</span>
+              <span class="widget-highlight-badge">Private Sunrise Balcony</span>
+            </div>
+            <h2 class="widget-title">Queen Room With Balcony</h2>
+            <p class="widget-desc">
+              A cozy and comfortable room perfect for guests who value fresh air and outdoor space. It offers a beautiful valley view along with a  balcony where you can relax, enjoy your morning tea, or unwind in the evening.
+            </p>
+            <div class="room-specs-grid">
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20M4 20V10l8-7 8 7v10"/></svg>
+                Queen Bed
+              </span>
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+                Private Attached Balcony
+              </span>
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17L9 11 13 15 18 9 21 12"/></svg>
+                Himalayan Valley Horizon
+              </span>
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                Study / Writing Desk
+              </span>
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+                En-Suite Bathroom
+              </span>
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0114.08 0"/></svg>
+                High-Speed Wi-Fi
+              </span>
+            </div>
+          </div>
+          <div class="widget-actions">
+            <a href="enquiry.html" class="book-room-btn">
+              <span>Book Queen Room</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+            <span class="book-guarantee-note">Most popular for couples</span>
+          </div>
+        </div>
+
+        <div class="photo-grid">
+          <div class="photo-card featured" data-room-name="Room 03 · Queen Room" data-caption="Queen Room With Balcony — Panoramic bedroom view overlooking the Kumaon valley and Himalayan horizon">
+            <img src="./assets/images/room3/IMG_5760.jpeg" alt="Woodpecker's Nest Queen Room With Balcony panoramic view" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">Queen Room With Balcony — Panoramic bedroom with stunning mountain vista</p>
+            </div>
+          </div>
+
+          <div class="photo-card" data-room-name="Room 03 · Queen Room" data-caption="Queen Room With Balcony — Queen-size bed welcoming early morning sunshine and fresh air">
+            <img src="./assets/images/room3/IMG_5753.jpeg" alt="Woodpecker's Nest Queen Room With Balcony bed" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">Queen Room With Balcony — Cozy bed &amp; morning sun</p>
+            </div>
+          </div>
+
+          <div class="photo-card" data-room-name="Room 03 · Queen Room" data-caption="Queen Room With Balcony — Natural wood paneled interiors creating a warm, comforting mountain refuge">
+            <img src="./assets/images/room3/IMG_5754.jpeg" alt="Woodpecker's Nest Queen Room With Balcony wood paneling" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">Queen Room With Balcony — Wooden craftsmanship &amp; cozy lighting</p>
+            </div>
+          </div>
+
+          <div class="photo-card" data-room-name="Room 03 · Queen Room" data-caption="Queen Room With Balcony — Dedicated study and writing desk overlooking the hills for inspired work">
+            <img src="./assets/images/room3/IMG_5763.jpeg" alt="Woodpecker's Nest Queen Room With Balcony study desk" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">Queen Room With Balcony — Work desk with valley inspiration</p>
+            </div>
+          </div>
+
+          <div class="photo-card" data-room-name="Room 03 · Queen Room" data-caption="Queen Room With Balcony — Clean modern bathroom with hot water geyser and clean shower setup">
+            <img src="./assets/images/room3/IMG_6401.jpeg" alt="Woodpecker's Nest Queen Room With Balcony bathroom" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">Queen Room With Balcony — Private en-suite bathroom</p>
+            </div>
+          </div>
+
+          <div class="photo-card" data-room-name="Room 03 · Queen Room" data-caption="Queen Room With Balcony — Bright bathroom vanity with mirror, tidy fixtures, and constant hot water">
+            <img src="./assets/images/room3/IMG_6403.jpeg" alt="Woodpecker's Nest Queen Room With Balcony vanity" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">Queen Room With Balcony — Vanity mirror &amp; hot geyser</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Additional Photos / Surroundings ================= -->
+      <section class="gallery-widget" id="additional" data-category="additional">
+        <div class="widget-header">
+          <div class="widget-title-area">
+            <div class="widget-tag-row">
+              <span class="widget-tag">Outdoor &amp; Nature</span>
+              <span class="widget-highlight-badge">Almora &amp; Binsar Panorama</span>
+            </div>
+            <h2 class="widget-title">Surroundings, Sunrises &amp; Nature Trails</h2>
+            <p class="widget-desc">
+              From golden dawn sunrises that set the Himalayan peaks ablaze to peaceful twilight under a blanket of stars. Experience the calm grounds, open patio, and quiet pine forest walking trails surrounding Woodpecker's Nest.
+            </p>
+            <div class="room-specs-grid">
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>
+                Golden Himalayan Dawns
+              </span>
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+                Private Balconies
+              </span>
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                Pine Forest Breeze
+              </span>
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/></svg>
+                Free Safe Parking
+              </span>
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                3.5 km to Kasar Devi Temple
+              </span>
+            </div>
+          </div>
+          <div class="widget-actions">
+            <a href="enquiry.html" class="book-room-btn">
+              <span>Plan Your Visit</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+            <span class="book-guarantee-note">Ideal for nature getaways</span>
+          </div>
+        </div>
+
+        <div class="photo-grid">
+          <div class="photo-card featured" data-room-name="Outdoor &amp; Nature" data-caption="Himalayan Sunrise — Morning golden hour illuminating the layered mountain ridges from Woodpecker's Nest">
+            <img src="./assets/images/additional_photos/IMG_5909.jpg" alt="Golden sunrise over Kumaon Himalayas" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">Spectacular dawn sunrise as seen directly from Woodpecker's Nest</p>
+            </div>
+          </div>
+
+          <div class="photo-card" data-room-name="Outdoor &amp; Nature" data-caption="Mountain Twilight — Violet skies and evening clouds painting the serene Dinapani horizon">
+            <img src="./assets/images/additional_photos/IMG_5910.JPG" alt="Mountain sunset and twilight" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">Evening twilight painted in soft amber and rose</p>
+            </div>
+          </div>
+
+          <div class="photo-card" data-room-name="Outdoor &amp; Nature" data-caption="Balcony Panorama — Wide valley view and crisp, unpolluted mountain skyline">
+            <img src="./assets/images/additional_photos/IMG_5701.jpeg" alt="Balcony panorama overlooking valley" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">Unobstructed balcony view across Dinapani</p>
+            </div>
+          </div>
+
+          <div class="photo-card" data-room-name="Outdoor &amp; Nature" data-caption="Homestay Grounds — Verdant mountain slopes and lush hill surroundings in all directions">
+            <img src="./assets/images/additional_photos/IMG_5713.jpeg" alt="Homestay grounds and lush hills" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">Pristine natural surroundings in the Kumaon hills</p>
+            </div>
+          </div>
+
+          <div class="photo-card" data-room-name="Outdoor &amp; Nature" data-caption="Open Mountain Horizon — Layered Himalayan hills touching the clouds">
+            <img src="./assets/images/additional_photos/IMG_6404.jpeg" alt="Mountain horizon and peaceful hills" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">Clear mountain air and timeless Himalayan vistas</p>
+            </div>
+          </div>
+
+          <div class="photo-card" data-room-name="Outdoor &amp; Nature" data-caption="Outdoor Patio — Sun-drenched open space for conversations, birdwatching, and pure rest">
+            <img src="./assets/images/additional_photos/IMG_6407.jpeg" alt="Outdoor patio and relaxation space" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">Open patio overlooking the hills</p>
+            </div>
+          </div>
+
+          <div class="photo-card" data-room-name="Outdoor &amp; Nature" data-caption="Nature Trails &amp; Pine Woods — Step right into quiet woodland trails and fresh Himalayan scents">
+            <img src="./assets/images/additional_photos/IMG_6568.jpg" alt="Green hills and nature trails near homestay" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">Lush pine forest trails right by the homestay</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Kitchen and Hall space ================= -->
+      <section class="gallery-widget" id="interior" data-category="interior">
+        <div class="widget-header">
+          <div class="widget-title-area">
+            <div class="widget-tag-row">
+              <span class="widget-tag">Shared Amenities</span>
+              <span class="widget-highlight-badge">Full Floor Feature</span>
+            </div>
+            <h2 class="widget-title">Dining Hall, Common Lounge &amp; Kitchen</h2>
+            <p class="widget-desc">
+              Warm common lounge, and fully functional kitchen designed for gatherings, shared laughter, and self-cooked meals.
+            </p>
+
+            <!-- Upsell Callout for Whole Floor -->
+            <div class="full-floor-upsell-banner">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <div class="full-floor-upsell-text">
+                <strong>Travelling with family or organizing a team workation?</strong>
+                <p>Book all 3 bedrooms as an entire private floor and enjoy exclusive private access to the living lounge, dining area, and fully equipped self-cooking kitchen.</p>
+              </div>
+            </div>
+
+            <div class="room-specs-grid">
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                Equipped with induction cooktop &amp; Cookware
+              </span>
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="4"/></svg>
+                Electric Kettle
+              </span>
+              <span class="spec-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>
+                Drinking Water
+              </span>
+            </div>
+          </div>
+          <div class="widget-actions">
+            <a href="enquiry.html" class="book-room-btn">
+              <span>Enquire for Full Floor</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+            <span class="book-guarantee-note">Full floor privacy guarantee</span>
+          </div>
+        </div>
+
+        <div class="photo-grid">
+          <div class="photo-card featured" data-room-name="Kitchen &amp; Hall Space" data-caption="Common Lounge &amp; Dining Area — Warm space for gathering, dining, conversations, and remote work sessions">
+            <img src="./assets/images/interior/IMG_6381.jpeg" alt="Woodpecker's Nest common lounge and dining space" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">Common dining lounge &amp; cozy living space (exclusive with full-floor booking)</p>
+            </div>
+          </div>
+
+          <div class="photo-card" data-room-name="Kitchen &amp; Hall Space" data-caption="Guest Kitchen — Complete with gas stove, cookware, kettle, and dinnerware for your home-style meals">
+            <img src="./assets/images/interior/IMG_6386.jpeg" alt="Woodpecker's Nest fully equipped kitchen" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">Kitchen setup for self-cooking and warm morning beverages</p>
+            </div>
+          </div>
+
+          <div class="photo-card" data-room-name="Kitchen &amp; Hall Space" data-caption="Kitchen Counter &amp; Appliances — Refrigerator, electric kettle, and storage for groceries">
+            <img src="./assets/images/interior/IMG_6387.jpeg" alt="Kitchen counter and appliances" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">Full kitchen appliances, refrigerator &amp; food storage</p>
+            </div>
+          </div>
+
+          <div class="photo-card" data-room-name="Kitchen &amp; Hall Space" data-caption="Dining Table — Where warm breakfasts, chai, and authentic Kumaoni dinners are shared">
+            <img src="./assets/images/interior/IMG_6388.jpeg" alt="Dining table setup" loading="lazy" />
+            <div class="photo-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="photo-overlay">
+              <p class="photo-caption">Warm dining table for fresh mountain meals and shared stories</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Bottom CTA ================= -->
+      <section class="gallery-bottom-cta">
+        <div class="cta-trust-badge">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span>4.9 / 5 Guest Rating · Verified Homestay</span>
+        </div>
+        <h3>Ready to Experience the Nest?</h3>
+        <p>
+          Book directly with us for best rates, personalized care, and flexible dates. Whether you're visiting Kasar Devi for spirituality, escaping the city heat, or settling in for a month of productive remote work.
+        </p>
+        <div class="cta-btns">
+          <a href="enquiry.html" class="cta-primary-btn">
+            <span>Enquire About Your Stay</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="width:16px;height:16px"><polyline points="9 18 15 12 9 6"/></svg>
+          </a>
+         
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ================= Lightbox Modal ================= -->
+    <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Photo Viewer">
+      <!-- Lightbox Header Bar -->
+      <div class="lightbox-top-bar">
+        <div class="lightbox-room-meta">
+          <span class="lightbox-room-tag" id="lightboxRoomTag">Room Photos</span>
+          <span class="lightbox-counter-pill" id="lightboxCounter">1 / 30</span>
+        </div>
+        <button class="lightbox-close-btn" id="lightboxClose" aria-label="Close photo viewer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <!-- Lightbox Main Stage -->
+      <div class="lightbox-content">
+        <button class="lightbox-nav-btn lightbox-prev-btn" id="lightboxPrev" aria-label="Previous photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="lightbox-nav-btn lightbox-next-btn" id="lightboxNext" aria-label="Next photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+
+        <div class="lightbox-img-wrap">
+          <img src="" alt="" class="lightbox-img" id="lightboxImg" />
+        </div>
+
+        <div class="lightbox-info-row">
+          <p class="lightbox-caption" id="lightboxCaption"></p>
+          <a href="enquiry.html" class="lightbox-book-cta" id="lightboxBookCta">
+            <span>Enquire This Room</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Lightbox Filmstrip Scrubber -->
+      <div class="lightbox-filmstrip" id="lightboxFilmstrip" aria-label="Photo filmstrip"></div>
+    </div>
+
+
+    <!-- ================= Footer ================= -->
+    <footer>
+      <p>
+        © 2025 Woodpecker's Nest · Dinapani, Uttarakhand · All rights reserved
+      </p>
+      <p style="opacity: 0.7; margin-top: 0.6rem; font-size: 0.74rem">
+        <a href="index.html">Home</a> &nbsp;·&nbsp;
+        <a href="gallery.html">Photo Gallery</a> &nbsp;·&nbsp;
+        <a href="enquiry.html">Stay Enquiry</a> &nbsp;·&nbsp;
+        <a href="https://airbnb.co.in/h/woodpeckersnestin" target="_blank" rel="noopener">Airbnb Listing</a> &nbsp;·&nbsp;
+        <a href="https://www.instagram.com/woodpeckersnestin" target="_blank" rel="noopener">Instagram</a>
+      </p>
+    </footer>
+
+    <!-- ================= Scripts ================= -->
+    <script>
+      (function () {
+        // Elements
+        var filterBtns = document.querySelectorAll(".filter-btn");
+        var widgets = document.querySelectorAll(".gallery-widget");
+        var photoCards = Array.from(document.querySelectorAll(".photo-card"));
+
+        var modal = document.getElementById("lightboxModal");
+        var modalImg = document.getElementById("lightboxImg");
+        var modalRoomTag = document.getElementById("lightboxRoomTag");
+        var modalCaption = document.getElementById("lightboxCaption");
+        var modalCounter = document.getElementById("lightboxCounter");
+        var modalFilmstrip = document.getElementById("lightboxFilmstrip");
+        var closeBtn = document.getElementById("lightboxClose");
+        var prevBtn = document.getElementById("lightboxPrev");
+        var nextBtn = document.getElementById("lightboxNext");
+
+
+        var activeCards = photoCards;
+        var currentIndex = 0;
+
+        // 1. Build Filmstrip Thumbnails inside Lightbox
+        function buildFilmstrip() {
+          if (!modalFilmstrip) return;
+          modalFilmstrip.innerHTML = "";
+          activeCards.forEach(function (card, index) {
+            var img = card.querySelector("img");
+            var thumb = document.createElement("div");
+            thumb.className = "lightbox-thumb" + (index === currentIndex ? " active" : "");
+            thumb.innerHTML = '<img src="' + img.src + '" alt="Thumbnail ' + (index + 1) + '" loading="lazy" />';
+            thumb.addEventListener("click", function () {
+              openLightbox(index);
+            });
+            modalFilmstrip.appendChild(thumb);
+          });
+        }
+
+        function updateFilmstripActive() {
+          var thumbs = modalFilmstrip.querySelectorAll(".lightbox-thumb");
+          thumbs.forEach(function (t, i) {
+            if (i === currentIndex) {
+              t.classList.add("active");
+              t.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+            } else {
+              t.classList.remove("active");
+            }
+          });
+        }
+
+        // 2. Lightbox Open & Transition
+        function openLightbox(index) {
+          if (activeCards.length === 0) return;
+          if (index < 0) index = 0;
+          if (index >= activeCards.length) index = activeCards.length - 1;
+          currentIndex = index;
+
+          var card = activeCards[currentIndex];
+          var img = card.querySelector("img");
+          var caption = card.getAttribute("data-caption") || img.getAttribute("alt") || "";
+          var roomName = card.getAttribute("data-room-name") || "Woodpecker's Nest";
+
+          // Cross-fade animation
+          modalImg.classList.add("fade-out");
+          setTimeout(function () {
+            modalImg.src = img.src;
+            modalImg.alt = caption;
+            modalRoomTag.textContent = roomName;
+            modalCaption.textContent = caption;
+            modalCounter.textContent = (currentIndex + 1) + " / " + activeCards.length;
+            modalImg.classList.remove("fade-out");
+            updateFilmstripActive();
+          }, 100);
+
+          modal.classList.add("active");
+          document.body.style.overflow = "hidden";
+        }
+
+        function closeLightbox() {
+          modal.classList.remove("active");
+          document.body.style.overflow = "";
+        }
+
+        function showNext() {
+          if (activeCards.length === 0) return;
+          var nextIdx = (currentIndex + 1) % activeCards.length;
+          openLightbox(nextIdx);
+        }
+
+        function showPrev() {
+          if (activeCards.length === 0) return;
+          var prevIdx = (currentIndex - 1 + activeCards.length) % activeCards.length;
+          openLightbox(prevIdx);
+        }
+
+        photoCards.forEach(function (card) {
+          card.addEventListener("click", function () {
+            activeCards = photoCards;
+            buildFilmstrip();
+            var idx = activeCards.indexOf(card);
+            if (idx !== -1) {
+              openLightbox(idx);
+            }
+          });
+        });
+
+        closeBtn.addEventListener("click", closeLightbox);
+        nextBtn.addEventListener("click", showNext);
+        prevBtn.addEventListener("click", showPrev);
+
+        modal.addEventListener("click", function (e) {
+          if (
+            e.target === modal ||
+            e.target.classList.contains("lightbox-img-wrap") ||
+            e.target.classList.contains("lightbox-content")
+          ) {
+            closeLightbox();
+          }
+        });
+
+        document.addEventListener("keydown", function (e) {
+          if (!modal.classList.contains("active")) return;
+          if (e.key === "Escape") closeLightbox();
+          if (e.key === "ArrowRight") showNext();
+          if (e.key === "ArrowLeft") showPrev();
+        });
+
+        // Touch Swipe in Lightbox
+        var touchStartX = 0;
+        var touchEndX = 0;
+        modal.addEventListener("touchstart", function (e) {
+          touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+        modal.addEventListener("touchend", function (e) {
+          touchEndX = e.changedTouches[0].screenX;
+          var diff = touchEndX - touchStartX;
+          if (Math.abs(diff) > 40) {
+            if (diff < 0) showNext();
+            else showPrev();
+          }
+        }, { passive: true });
+
+        // 3. Smooth Navigation & Scroll-Spy Observer
+        filterBtns.forEach(function (btn) {
+          btn.addEventListener("click", function (e) {
+            e.preventDefault();
+            var targetId = btn.getAttribute("data-target");
+
+            filterBtns.forEach(function (b) { b.classList.remove("active"); });
+            btn.classList.add("active");
+
+            if (targetId === "all") {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            } else {
+              var targetEl = document.getElementById(targetId);
+              if (targetEl) {
+                var yOffset = -90; // clears sticky pill bar
+                var y = targetEl.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: "smooth" });
+              }
+            }
+          });
+        });
+
+        // Scroll-Spy: Highlight active pill as user scrolls
+        if ("IntersectionObserver" in window) {
+          var observerOptions = {
+            root: null,
+            rootMargin: "-20% 0px -60% 0px",
+            threshold: 0
+          };
+
+          var sectionObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                var id = entry.target.id;
+                filterBtns.forEach(function (btn) {
+                  if (btn.getAttribute("data-target") === id) {
+                    filterBtns.forEach(function (b) { b.classList.remove("active"); });
+                    btn.classList.add("active");
+                    btn.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+                  }
+                });
+              }
+            });
+          }, observerOptions);
+
+          widgets.forEach(function (w) {
+            sectionObserver.observe(w);
+          });
+        }
+
+
+      })();
+    </script>
+  </body>
+</html>
